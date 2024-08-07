@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (count < target) {
       counter.innerText = formatNumber(Math.ceil(count + increment)); // Format incremented number
-      setTimeout(() => updateCount(counter), 1);
+      setTimeout(() => updateCount(counter), 5);
     } else {
       if (counter.parentElement.querySelector('.label').textContent.includes('Clients')) {
         counter.innerText = formattedTarget + '+';
